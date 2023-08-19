@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.coverpage{
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    /*background-color: #2a2a2a;
+    --second-background-color:#202020;*/
+    background-image: url("background.jpg");
+
+    
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+nav{
+    position: relative;
+    top: 0%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+    text-decoration: none;
+}
+
+.logo{
+    position: relative;
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+#clr{
+    color: #59CE8F;  
+   
+}
+.decorate a{
+    text-decoration: none;
+    font-weight: bold;
+    color:white;
+    text-transform: capitalize;
+}
+
+nav ul li a:hover{
+    color: #59CE8F;
+    transition: .4s;
+    font-weight:bold;
+    
+}
+
+
+.content{
+    margin-top: 10%;
+    text-align: center;
+    font-weight: normal;
+}
+.content h1{
+    color:white;
+    margin:20px;
+    font-size:60px;
+}
+.content h3{
+    color:white;
+    font-size:30px;
+    padding:5px;
+}
+#about{
+    margin: 20px auto;
+}
+.title-text{
+    color: #000000;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: capitalize;
+    font-size: 30px;
+}
+.container{
+ width:100%;
+ padding-right:10%;
+ padding-left:10%;
+ padding-top: 10px;
+ margin:25px auto;
+}
+.img-fluid{
+    max-width: 100%;
+}
+
+.my-img{
+    width: 300px;
+    height: auto;
+    border-radius: 2em;
+}
+
+.card-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid gainsboro;
+    border-radius: 0.5em;
+    padding: 10px;
+    
+}
+
+.card-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: solid;
+    font-size: 20px;
+    margin-top: 0%;
+    
+}
+#about .card-body{
+    padding-left: 30px;
+    padding-top: 20px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+#about .card-text{
+    font-size: 10px;
+    color: #000000;
+}
+.btn{
+    display: inline-block;
+    background-color: #59CE8F;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: transform .4s;
+    margin: 30px;
+}
+
+.btn:hover{
+    transform: scale(1.2);
+}
+#decor{
+    color: #59CE8F;
+    text-align: center;
+}
+/*Education*/
+#education{
+    height:100%;
+    background-color:#000000;
+    color:#ffffff;
+    padding:5px;
+    margin:20px auto;
+}
+#container-row{
+    margin: 20px 0;
+}
+.title-text{
+ margin: 20px auto;
+    font-size: 35px;
+    font-weight: 400;
+    text-align: center;
+    text-decoration: underline;
+    letter-spacing: 1px;
+
+}
+.card-group{
+    margin:10 px auto;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content:space-evenly ;
+    color:white;
+}
+.card{
+    font-size: 1.2em;
+    width:350px;
+    height:250px; 
+    border:1px solid gainsboro;
+    border-radius: 0.8px;
+    margin:10px;
+    text-align: left;
+}
+.card:hover{
+    background-color: #cdf0dd;
+    color: #000000;
+    transform: translateY(-10);
+    transition: all .4s;
+}
+.card-title{
+    font-size:1.3rem;
+}
+.bold-text-heading{
+    font-weight: 500;
+    color: #232931;
+}
+
+.card span{
+    font-size: 10px;
+    text-align: center;
+    margin:10px auto;
+    display:block;
+}
+span i{
+    font-size: 80px;
+}
+/*Skill*/
+#skills{
+    height:100%;
+}
+.skill-row{
+    width: 100%;
+}
+.progress-group{
+    width:100%;
+    padding:8px;
+    will-change: transform;
+    transition:transform 450ms;
+
+}
+.progress-group:hover{
+    transition: transform 125ms;
+    transform:translateY(-10px);
+
+}
+.progress{
+    width:400px;
+    padding:10px;
+    margin:0px;
+    background-color: green;
+}
+.progress-text{
+    padding-top: 10px;
+}
+.progress-area{
+    width:100%;
+    background-color:gray;
+    border-radius: 20px;
+    margin-top:3px;
+}
+.skillset{
+    text-align: right;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right:5px ;
+    border-radius: 20px;
+    color:#fff;
+}
+.html{
+    width:85%;
+    background-color:plum;
+}
+.css{
+    width:65%;
+    background-color:gold;
+}
+.js{
+    width:60%;
+    background-color:burlywood;
+}
+.c{
+    width:90%;
+    background-color:sandybrown;
+}
+
+.git{
+    width:50%;
+    background-color:aquamarine;
+}
+/*Footer*/
+#footer{
+    position:relative;
+    width:100%;
+    height:400px;
+    background:#101010;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+
+}
+footer p:nth-child(1){
+    font-size:30px;
+    color:#fff;
+    font-weight: bold;
+    margin-bottom: 20px;
+   
+}
+footer p:nth-child(3){
+    color:#fff;
+    text-align:center;
+    padding-top: 10px;
+    line-height: 26px;
+    width:500px;
+    font-size:17px;
+}
+.social{
+    display: flex;
+}
+.social a{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #59CE8F; 
+    border-radius: 50%;
+    margin: 22px 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+.fa-heart{
+    color:red;
+}
+.social a:hover{
+    transform: translate(1.3);
+    transition:.3s;
+}
+@media (max-width: 767px){
+    nav ul{
+        display:flex;
+        justify-content: baseline;
+        align-items: baseline;
+        flex-direction:column;
+    }
+    .card-content{
+        flex-direction: column;
+    }
+    .img-fluid{
+        max-width: 100%;
+    }
+    .project-card-group{
+        display:flex;
+        flex-direction: column;
+        margin:10px auto;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-self: center;
+    }
+}
